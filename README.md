@@ -9,7 +9,7 @@
 
 Adaptive Intelligence (AI) is a smart, behavior-driven system designed to analyze user actions, learn patterns, predict next steps, detect anomalies, and generate meaningful insights — without using machine learning.
 
-The system simulates **real-world enterprise analytics platforms** using **Core Java + MySQL**.
+The system simulates **real-world enterprise analytics platforms**.
 
 ---
 
