@@ -1,0 +1,202 @@
+[2026-01-13 01:30:38.151] [ERROR] Database connection failed: JDBC Driver not found
+[2026-01-13 01:31:45.336] [INFO] Database connection pool initialized successfully
+[2026-01-13 01:31:45.343] [INFO] Background Intelligence Worker thread started
+[2026-01-13 01:31:45.343] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026-01-13 01:31:45.456] [PERFORMANCE] Pattern Mining Cycle | Response Time: 108ms
+[2026-01-13 01:32:15.487] [PERFORMANCE] Pattern Mining Cycle | Response Time: 15ms
+[2026-01-13 01:32:45.506] [PERFORMANCE] Pattern Mining Cycle | Response Time: 9ms
+[2026-01-13 01:36:26.714] [INFO] Database connection pool initialized successfully
+[2026-01-13 01:36:26.719] [INFO] Background Intelligence Worker thread started
+[2026-01-13 01:36:26.720] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026-01-13 01:36:26.830] [PERFORMANCE] Pattern Mining Cycle | Response Time: 106ms
+[2026-01-13 01:36:41.517] [INFO] Session created for user: anmol (ID: 1)
+[2026-01-13 01:36:41.518] [INFO] User login: anmol
+[2026-01-13 01:36:54.409] [PERFORMANCE] recordUserAction(SEARCH) | Response Time: 22ms
+[2026-01-13 01:36:56.945] [PERFORMANCE] Pattern Mining Cycle | Response Time: 112ms
+[2026-01-13 01:37:07.973] [PERFORMANCE] recordUserAction(BROWSE) | Response Time: 14ms
+[2026-01-13 01:37:16.636] [PERFORMANCE] recordUserAction(SEARCH) | Response Time: 14ms
+[2026-01-13 01:37:26.969] [PERFORMANCE] Pattern Mining Cycle | Response Time: 22ms
+[2026-01-13 01:37:42.054] [INFO] Retrieved top 3 suspicious users
+[2026-01-13 01:37:56.986] [PERFORMANCE] Pattern Mining Cycle | Response Time: 15ms
+[2026-01-13 01:38:11.413] [INFO] Session closed for user: anmol | Duration: 89s | Actions: 3
+[2026-01-13 01:38:11.414] [INFO] User logout: anmol
+[2026-01-13 01:38:14.954] [INFO] BackgroundIntelligenceWorker stop signal sent
+[2026-01-13 01:38:15.780] [INFO] BackgroundIntelligenceWorker stopped
+[2026-01-13 01:38:15.780] [INFO] Background Intelligence Worker thread stopped
+[2026-01-13 01:38:15.788] [INFO] Application shutting down
+[2026-01-13 01:40:18.839] [INFO] Database connection pool initialized successfully
+[2026-01-13 01:40:18.845] [INFO] Background Intelligence Worker thread started
+[2026-01-13 01:40:18.845] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026-01-13 01:40:18.985] [PERFORMANCE] Pattern Mining Cycle | Response Time: 136ms
+[2026-01-13 01:40:48.716] [INFO] Session created for user: baburao (ID: 3)
+[2026-01-13 01:40:48.716] [INFO] User registered: baburao
+[2026-01-13 01:40:49.021] [PERFORMANCE] Pattern Mining Cycle | Response Time: 33ms
+[2026-01-13 01:40:59.225] [PERFORMANCE] recordUserAction(LOGIN) | Response Time: 16ms
+[2026-01-13 01:41:04.745] [INFO] Session closed for user: baburao | Duration: 16s | Actions: 1
+[2026-01-13 01:41:04.746] [INFO] User logout: baburao
+[2026-01-13 01:41:07.300] [INFO] BackgroundIntelligenceWorker stop signal sent
+[2026-01-13 01:41:07.870] [INFO] BackgroundIntelligenceWorker stopped
+[2026-01-13 01:41:07.870] [INFO] Background Intelligence Worker thread stopped
+[2026-01-13 01:41:07.883] [INFO] Application shutting down
+[2026-01-13 02:23:56.241] [INFO] Database connection pool initialized successfully
+[2026-01-13 02:23:56.248] [INFO] Background Intelligence Worker thread started
+[2026-01-13 02:23:56.248] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026-01-13 02:23:56.382] [PERFORMANCE] Pattern Mining Cycle | Response Time: 130ms
+[2026-01-13 02:24:10.423] [INFO] Session created for user: baburao (ID: 3)
+[2026-01-13 02:24:10.424] [INFO] User registered: baburao
+[2026-01-13 02:24:20.749] [INFO] BackgroundIntelligenceWorker stop signal sent
+[2026-01-13 02:24:21.267] [INFO] BackgroundIntelligenceWorker stopped
+[2026-01-13 02:24:21.267] [INFO] Background Intelligence Worker thread stopped
+[2026-01-13 02:24:21.291] [INFO] Application shutting down
+[2026-01-13 02:29:26.469] [INFO] Database connection pool initialized successfully
+[2026-01-13 02:29:26.478] [INFO] Background Intelligence Worker thread started
+[2026-01-13 02:29:26.478] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026-01-13 02:29:26.621] [PERFORMANCE] Pattern Mining Cycle | Response Time: 137ms
+[2026-01-13 02:55:37.153] [INFO] Database connection pool initialized successfully
+[2026-01-13 02:55:37.161] [INFO] Background Intelligence Worker thread started
+[2026-01-13 02:55:37.161] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026-01-13 02:55:37.323] [PERFORMANCE] Pattern Mining Cycle | Response Time: 157ms
+[2026-01-13 02:55:47.411] [INFO] Session created for user: anmol (ID: 1)
+[2026-01-13 02:55:47.412] [INFO] User login: anmol
+[2026-01-13 03:12:44.216] [INFO] Database initialized
+[2026-01-13 03:12:44.225] [INFO] Background Intelligence Worker thread started
+[2026-01-13 03:12:44.225] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026-01-13 03:12:44.385] [PERFORMANCE] Pattern Mining Cycle | Response Time: 154ms
+[2026-01-13 03:13:14.428] [PERFORMANCE] Pattern Mining Cycle | Response Time: 39ms
+[2026-01-13 03:13:44.450] [PERFORMANCE] Pattern Mining Cycle | Response Time: 20ms
+[2026-01-13 03:14:14.482] [PERFORMANCE] Pattern Mining Cycle | Response Time: 30ms
+[2026-01-13 03:14:44.509] [PERFORMANCE] Pattern Mining Cycle | Response Time: 26ms
+[2026-01-13 03:19:50.653] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026-01-13 03:19:50.805] [PERFORMANCE] Pattern Mining Cycle | Response Time: 147ms
+[2026-01-13 03:20:20.831] [PERFORMANCE] Pattern Mining Cycle | Response Time: 21ms
+[2026-01-13 03:20:50.853] [PERFORMANCE] Pattern Mining Cycle | Response Time: 21ms
+[2026-01-13 03:21:03.637] [INFO] User registered: admin
+[2026-01-13 03:21:15.181] [INFO] Session created for user: admin (ID: 4)
+[2026-01-13 03:21:15.181] [INFO] User login: admin
+[2026-01-13 03:21:20.904] [PERFORMANCE] Pattern Mining Cycle | Response Time: 48ms
+[2026-01-13 03:21:53.398] [INFO] Database connection initialized
+[2026-01-13 03:21:53.405] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026-01-13 03:21:53.560] [PERFORMANCE] Pattern Mining Cycle | Response Time: 151ms
+[2026-01-13 03:22:23.623] [PERFORMANCE] Pattern Mining Cycle | Response Time: 48ms
+[2026-01-13 03:22:53.694] [PERFORMANCE] Pattern Mining Cycle | Response Time: 53ms
+[2026-01-13 03:23:23.741] [PERFORMANCE] Pattern Mining Cycle | Response Time: 35ms
+[2026-01-13 03:23:38.326] [INFO] Session created for user: admin (ID: 4)
+[2026-01-13 03:23:38.327] [INFO] User login: admin
+[2026-01-13 03:23:51.833] [PERFORMANCE] recordUserAction | Response Time: 23ms
+[2026-01-13 03:23:53.829] [PERFORMANCE] Pattern Mining Cycle | Response Time: 87ms
+[2026-01-13 03:29:18.109] [INFO] Background Intelligence Worker thread started
+[2026-01-13 03:29:18.112] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026-01-13 03:29:18.324] [PERFORMANCE] Pattern Mining Cycle | Response Time: 205ms
+[2026-01-13 03:29:35.520] [INFO] Session created for user: admin (ID: 4)
+[2026-01-13 03:29:48.391] [PERFORMANCE] Pattern Mining Cycle | Response Time: 63ms
+[2026-01-13 03:30:18.463] [PERFORMANCE] Pattern Mining Cycle | Response Time: 69ms
+[2026-01-13 03:30:40.038] [INFO] Session closed for user: admin | Duration: 64s | Actions: 6
+[2026-01-13 03:30:44.149] [INFO] BackgroundIntelligenceWorker stop signal sent
+[2026-01-13 03:30:44.160] [INFO] BackgroundIntelligenceWorker stopped
+[2026-01-13 03:30:49.763] [INFO] Background Intelligence Worker thread started
+[2026-01-13 03:30:49.765] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026-01-13 03:30:49.968] [PERFORMANCE] Pattern Mining Cycle | Response Time: 198ms
+[2026-01-13 03:31:20.044] [PERFORMANCE] Pattern Mining Cycle | Response Time: 70ms
+[2026-01-13 03:31:21.470] [INFO] Session created for user: admin (ID: 4)
+[2026-01-13 03:31:25.598] [INFO] Retrieved top 3 suspicious users
+[2026-01-13 03:31:34.922] [INFO] Retrieved top 3 suspicious users
+[2026-01-13 03:31:38.051] [INFO] Session closed for user: admin | Duration: 16s | Actions: 0
+[2026-01-13 03:31:41.799] [INFO] BackgroundIntelligenceWorker stop signal sent
+[2026-01-13 03:31:42.789] [INFO] BackgroundIntelligenceWorker stopped
+[2026-01-13 03:32:11.479] [INFO] Background Intelligence Worker thread started
+[2026-01-13 03:32:11.481] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026-01-13 03:32:11.674] [PERFORMANCE] Pattern Mining Cycle | Response Time: 188ms
+[2026-01-13 03:32:41.759] [PERFORMANCE] Pattern Mining Cycle | Response Time: 78ms
+[2026-01-14 00:25:46.290] [INFO] Background Intelligence Worker thread started
+[2026-01-14 00:25:46.292] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026-01-14 00:25:46.716] [PERFORMANCE] Pattern Mining Cycle | Response Time: 420ms
+[2026-01-14 00:26:16.799] [PERFORMANCE] Pattern Mining Cycle | Response Time: 77ms
+[2026-01-14 00:26:40.137] [INFO] Session created for user: ayush (ID: 5)
+[2026-01-14 00:26:46.892] [PERFORMANCE] Pattern Mining Cycle | Response Time: 92ms
+[2026-01-14 00:27:17.050] [PERFORMANCE] Pattern Mining Cycle | Response Time: 156ms
+[2026-01-14 00:27:47.143] [PERFORMANCE] Pattern Mining Cycle | Response Time: 91ms
+[2026-01-14 00:28:17.248] [PERFORMANCE] Pattern Mining Cycle | Response Time: 102ms
+[2026-01-14 00:28:47.333] [PERFORMANCE] Pattern Mining Cycle | Response Time: 84ms
+[2026-01-14 00:29:10.469] [INFO] Session closed for user: ayush | Duration: 150s | Actions: 6
+[2026-01-14 00:29:17.447] [PERFORMANCE] Pattern Mining Cycle | Response Time: 111ms
+[2026-01-14 00:29:25.120] [INFO] BackgroundIntelligenceWorker stop signal sent
+[2026-01-14 00:29:25.469] [INFO] BackgroundIntelligenceWorker stopped
+[2026-01-15 14:29:13.750] [INFO] Background Intelligence Worker thread started
+[2026-01-15 14:29:13.751] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026-01-15 14:29:14.119] [PERFORMANCE] Pattern Mining Cycle | Response Time: 363ms
+[2026-01-15 14:29:21.103] [INFO] Session created for user: anmol (ID: 1)
+[2026-01-15 14:29:42.385] [INFO] Retrieved top 3 suspicious users
+[2026-01-15 14:29:44.218] [PERFORMANCE] Pattern Mining Cycle | Response Time: 94ms
+[2026-01-15 14:29:45.484] [INFO] Session closed for user: anmol | Duration: 24s | Actions: 1
+[2026-01-15 14:29:47.504] [INFO] BackgroundIntelligenceWorker stop signal sent
+[2026-01-15 14:29:47.775] [INFO] BackgroundIntelligenceWorker stopped
+[2026 - 01 - 15 16 : 21 : 57 . 226] [INFO] Background Intelligence Worker thread started
+[2026 - 01 - 15 16 : 21 : 57 . 228] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026 - 01 - 15 16 : 21 : 57 . 550] [PERFORMANCE] Pattern Mining Cycle | Response Time : 317ms
+[2026 - 01 - 15 16 : 24 : 04 . 440] [INFO] Background Intelligence Worker thread started
+[2026 - 01 - 15 16 : 24 : 04 . 442] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026 - 01 - 15 16 : 24 : 04 . 593] [PERFORMANCE] Pattern Mining Cycle | Response Time : 146ms
+[2026 - 01 - 15 16 : 24 : 34 . 618] [PERFORMANCE] Pattern Mining Cycle | Response Time : 21ms
+[2026 - 01 - 15 16 : 30 : 57 . 332] [INFO] Background Intelligence Worker thread started
+[2026 - 01 - 15 16 : 30 : 57 . 334] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026 - 01 - 15 16 : 30 : 57 . 478] [PERFORMANCE] Pattern Mining Cycle | Response Time : 139ms
+[2026 - 01 - 15 16 : 31 : 34 . 133] [INFO] Background Intelligence Worker thread started
+[2026 - 01 - 15 16 : 31 : 34 . 136] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026 - 01 - 15 16 : 31 : 34 . 275] [PERFORMANCE] Pattern Mining Cycle | Response Time : 133ms
+[2026 - 01 - 15 16 : 32 : 04 . 293] [PERFORMANCE] Pattern Mining Cycle | Response Time : 14ms
+[2026 - 01 - 15 16 : 32 : 15 . 852] [INFO] Session created for user : baburao (ID : 3)
+[2026 - 01 - 15 16 : 42 : 05 . 451] [INFO] Background Intelligence Worker thread started
+[2026 - 01 - 15 16 : 42 : 05 . 454] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026 - 01 - 15 16 : 42 : 05 . 585] [PERFORMANCE] Pattern Mining Cycle | Response Time : 127ms
+[2026 - 01 - 15 16 : 42 : 33 . 822] [INFO] Session created for user : baburao (ID : 3)
+[2026 - 01 - 15 16 : 42 : 35 . 623] [PERFORMANCE] Pattern Mining Cycle | Response Time : 32ms
+[2026 - 01 - 15 16 : 43 : 05 . 841] [PERFORMANCE] Pattern Mining Cycle | Response Time : 217ms
+[2026 - 01 - 15 16 : 43 : 35 . 877] [PERFORMANCE] Pattern Mining Cycle | Response Time : 34ms
+[2026 - 01 - 15 16 : 44 : 05 . 916] [PERFORMANCE] Pattern Mining Cycle | Response Time : 36ms
+[2026 - 01 - 15 16 : 44 : 35 . 945] [PERFORMANCE] Pattern Mining Cycle | Response Time : 27ms
+[2026 - 01 - 15 16 : 45 : 06 . 010] [PERFORMANCE] Pattern Mining Cycle | Response Time : 62ms
+[2026 - 01 - 15 16 : 45 : 14 . 211] [INFO] Session closed for user : baburao | Duration : 160s | Actions : 11
+[2026 - 01 - 15 16 : 45 : 26 . 385] [INFO] Session created for user : jethalal (ID : 4)
+[2026 - 01 - 15 16 : 45 : 36 . 057] [PERFORMANCE] Pattern Mining Cycle | Response Time : 46ms
+[2026 - 01 - 15 16 : 45 : 38 . 132] [INFO] Session closed for user : jethalal | Duration : 11s | Actions : 0
+[2026 - 01 - 15 16 : 46 : 04 . 314] [INFO] BackgroundIntelligenceWorker stop signal sent
+[2026 - 01 - 15 16 : 46 : 04 . 663] [INFO] BackgroundIntelligenceWorker stopped
+[2026 - 01 - 15 19 : 08 : 43 . 677] [INFO] Background Intelligence Worker thread started
+[2026 - 01 - 15 19 : 08 : 43 . 679] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026 - 01 - 15 19 : 08 : 43 . 784] [PERFORMANCE] Pattern Mining Cycle | Response Time : 99ms
+[2026 - 01 - 15 19 : 09 : 00 . 300] [INFO] Session created for user : baburao (ID : 3)
+[2026 - 01 - 15 19 : 09 : 08 . 885] [INFO] Session closed for user : baburao | Duration : 8s | Actions : 1
+[2026 - 01 - 15 19 : 09 : 13 . 835] [PERFORMANCE] Pattern Mining Cycle | Response Time : 49ms
+[2026 - 01 - 15 19 : 09 : 23 . 830] [INFO] Session created for user : james (ID : 4)
+[2026 - 01 - 15 19 : 09 : 43 . 890] [PERFORMANCE] Pattern Mining Cycle | Response Time : 54ms
+[2026 - 01 - 15 19 : 10 : 13 . 935] [PERFORMANCE] Pattern Mining Cycle | Response Time : 43ms
+[2026 - 01 - 15 19 : 10 : 43 . 981] [PERFORMANCE] Pattern Mining Cycle | Response Time : 43ms
+[2026 - 01 - 15 19 : 11 : 14 . 042] [PERFORMANCE] Pattern Mining Cycle | Response Time : 50ms
+[2026 - 01 - 15 19 : 11 : 44 . 111] [PERFORMANCE] Pattern Mining Cycle | Response Time : 61ms
+[2026 - 01 - 15 19 : 12 : 14 . 153] [PERFORMANCE] Pattern Mining Cycle | Response Time : 40ms
+[2026 - 01 - 15 19 : 12 : 44 . 206] [PERFORMANCE] Pattern Mining Cycle | Response Time : 37ms
+[2026 - 01 - 15 19 : 25 : 54 . 119] [INFO] Background Intelligence Worker thread started
+[2026 - 01 - 15 19 : 25 : 54 . 122] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026 - 01 - 15 19 : 25 : 54 . 373] [PERFORMANCE] Pattern Mining Cycle | Response Time : 246ms
+[2026 - 01 - 15 19 : 26 : 08 . 077] [INFO] Session created for user : james (ID : 4)
+[2026 - 01 - 15 19 : 26 : 24 . 468] [PERFORMANCE] Pattern Mining Cycle | Response Time : 89ms
+[2026 - 01 - 15 19 : 26 : 34 . 865] [INFO] Session closed for user : james | Duration : 26s | Actions : 0
+[2026 - 01 - 15 19 : 26 : 40 . 604] [INFO] Session created for user : sams (ID : 5)
+[2026 - 01 - 15 19 : 26 : 54 . 583] [PERFORMANCE] Pattern Mining Cycle | Response Time : 113ms
+[2026 - 01 - 15 19 : 27 : 24 . 692] [PERFORMANCE] Pattern Mining Cycle | Response Time : 108ms
+[2026 - 01 - 15 19 : 27 : 54 . 833] [PERFORMANCE] Pattern Mining Cycle | Response Time : 138ms
+[2026 - 01 - 15 19 : 28 : 24 . 954] [PERFORMANCE] Pattern Mining Cycle | Response Time : 118ms
+[2026 - 01 - 15 19 : 31 : 52 . 316] [INFO] Background Intelligence Worker thread started
+[2026 - 01 - 15 19 : 31 : 52 . 318] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026 - 01 - 15 19 : 31 : 52 . 576] [PERFORMANCE] Pattern Mining Cycle | Response Time : 250ms
+[2026 - 01 - 15 19 : 32 : 02 . 174] [INFO] Session created for user : sams (ID : 5)
+[2026 - 01 - 15 19 : 32 : 47 . 077] [INFO] Background Intelligence Worker thread started
+[2026 - 01 - 15 19 : 32 : 47 . 079] [INFO] BackgroundIntelligenceWorker started in separate thread
+[2026 - 01 - 15 19 : 32 : 47 . 339] [PERFORMANCE] Pattern Mining Cycle | Response Time : 256ms
+[2026 - 01 - 15 19 : 32 : 51 . 887] [INFO] Session created for user : sams (ID : 5)
+[2026 - 01 - 15 19 : 33 : 17 . 454] [PERFORMANCE] Pattern Mining Cycle | Response Time : 112ms
+[2026 - 01 - 15 19 : 33 : 47 . 561] [PERFORMANCE] Pattern Mining Cycle | Response Time : 105ms
+[2026 - 01 - 15 19 : 34 : 04 . 709] [INFO] Session closed for user : sams | Duration : 72s | Actions : 1
+[2026 - 01 - 15 19 : 34 : 17 . 645] [PERFORMANCE] Pattern Mining Cycle | Response Time : 82ms
+[2026 - 01 - 15 19 : 34 : 18 . 044] [INFO] Session created for user : aum (ID : 6)
+[2026 - 01 - 15 19 : 34 : 47 . 773] [PERFORMANCE] Pattern Mining Cycle | Response Time : 127ms

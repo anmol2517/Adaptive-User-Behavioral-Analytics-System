@@ -1,0 +1,17 @@
+===============================================
+SECURITY REPORT
+===============================================
+Generated: 2026-01-13 03:13:51
+
+[SECURITY_INCIDENT]
+Type: BRUTE_FORCE_ATTEMPT
+
+[DETAILS]
+User anmol attempted unauthorized access 3 times
+
+[TIMESTAMP]
+2026-01-13 03:13:51
+
+===============================================
+End of Report
+===============================================
