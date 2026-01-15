@@ -1,0 +1,24 @@
+📦 Dependency Requirement : MySQL Connector/J
+
+The MySQL Connector/J library is required to run this project. It is not uploaded to this repository because the file size is too large for GitHub's recommended limit.
+
+--------------------------------------------------
+
+📥 Download Link
+
+Download the official driver from here : [MySQL Connector/J Downloads](https://dev.mysql.com/downloads/connector/j/)
+
+--------------------------------------------------
+
+🛠️ How to Add to Your Project
+
+1. Download the `.zip` or `.tar.gz` file and extract the `mysql-connector-j-9.x.x.jar`.
+
+2. In IntelliJ IDEA
+   - Go to `File` > `Project Structure` > `Libraries`.
+   - Click `+` and select the `.jar` file you downloaded.
+
+⚠️ Important Note
+Without this connector, the `DBConnection.java` class will throw a `ClassNotFoundException`. Ensure the `.jar` is added to your Classpath before running `MainApp.java`.
+
+-------------------------------------------------- happy Coding!
