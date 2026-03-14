@@ -21,8 +21,8 @@ public class DBConnection {
     private static boolean poolInitialized = false;
 
     private static final String DB_URL = "jdbc:mysql://localhost:3306/auis_db";
-    private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "Scar2511@#";
+    private static final String DB_USER = "your_username";
+    private static final String DB_PASSWORD = "your_password";
 
 
      //  Initialize connection pool on startup
