@@ -1,261 +1,275 @@
-# 🚀 Adaptive-User-Behavioral-Analytics-System
-### ✨ Adaptive Intelligence (AI) ✅ || Artificial Intelligence (AI) ❌
+# 🏢 RevWorkforce — HRM Microservices System
 
-> An enterprise-grade, AI-inspired, rule-based Java console application for intelligent user behavior analysis, session tracking, anomaly detection, and security enforcement.
-
----
-
-## 📌 Overview
-
-Adaptive Intelligence (AI) is a smart, behavior-driven system designed to analyze user actions, learn patterns, predict next steps, detect anomalies, and generate meaningful insights — without using machine learning.
-
-The system simulates **real-world enterprise analytics platforms**.
+> A scalable, production-ready **Human Resource Management (HRM)** system built with a microservices architecture using **Spring Boot**, **Spring Cloud**, **MySQL**, and **Docker**.
 
 ---
 
-## 🎯 Objectives
+## 📌 Table of Contents
 
-- Understand user behavior patterns
-- Predict next possible actions
-- Track user sessions
-- Detect suspicious activities
-- Provide personalized insights
-- Generate persistent reports
-- Ensure account-level security
-- Handle failures gracefully
-- Bridge the gap between simple CRUD systems and intelligent analytics platforms
-
----
-
-## 🧠 Key Capabilities
-
-- 📊 Data Analytics
-- 🔁 Pattern Learning
-- 🧭 Action Prediction
-- 🧑‍💻 Session Management
-- 🚨 Anomaly Detection
-- 🔐 Security System
-- 🧾 Report Generation
-- 🧵 Multithreading
-- 🛡️ Fault Tolerance
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Microservices](#microservices)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Environment Variables](#environment-variables)
+- [API Overview](#api-overview)
+- [Docker Setup](#docker-setup)
+- [Team](#team)
 
 ---
 
-## 🏗️ Tech Stack
+## 🧭 Overview
+
+**RevWorkforce** is a group project that implements a full-featured HRM platform using a microservices-based design. It handles everything from employee onboarding, leave management, and performance reviews to notifications and HR reporting — all behind a single **API Gateway** with **JWT-based authentication**.
+
+Key highlights:
+- Role-based access control (`ADMIN`, `HR`, `MANAGER`, `Employee`)
+- Centralized configuration via Spring Cloud Config Server
+- Service registration & discovery via Eureka
+- Fully containerized with Docker Compose
+
+---
+
+## 🏗️ Architecture
+
+```
+                        ┌─────────────────────────────────┐
+                        │         React/Angular UI         │
+                        └───────────────┬─────────────────┘
+                                        │
+                        ┌───────────────▼─────────────────┐
+                        │           API Gateway            │
+                        │    (Port 8080 | JWT Auth)        │
+                        └──┬──────┬──────┬──────┬──────┬──┘
+                           │      │      │      │      │
+               ┌───────────┘  ┌───┘  ┌───┘  ┌───┘  ┌───┘
+               ▼              ▼      ▼      ▼      ▼
+          User-Svc   Employee-Svc  Leave  Perf  Notify  Report
+               │              │      │      │      │      │
+               └──────────────┴──────┴──────┘      │      │
+                                   │                └──────┘
+                              ┌────▼────┐
+                              │  MySQL  │
+                              └─────────┘
+
+        ┌──────────────────────────────────────────────┐
+        │  Eureka Service Discovery  |  Config Server   │
+        └──────────────────────────────────────────────┘
+```
+
+---
+
+## 🔧 Microservices
+
+| Service | Port | Description |
+|---|---|---|
+| **api-gateway** | `8080` | Single entry point, JWT validation, routing |
+| **service-discovery** | `8761` | Eureka service registry |
+| **config-server** | `8888` | Centralized configuration management |
+| **user-service** | — | Authentication, user management, JWT issuance |
+| **employee-service** | — | Employee profiles, departments, designations |
+| **leave-service** | — | Leave application, approval, balance tracking |
+| **performance-service** | — | Self-reviews, manager feedback, goals |
+| **notification-service** | — | In-app notifications for employees |
+| **reporting-service** | — | HR dashboard and analytics |
+
+---
+
+## 🛠️ Tech Stack
 
 | Layer | Technology |
-|------|------------|
-| Language | Java (Core Java) |
-| Database | MySQL |
-| Connectivity | JDBC |
-| Architecture | Layered (MVC) |
-| Logging | File-based Logging |
-| Threading | Java Executor Service |
-| Security | SHA-256 Hashing |
-| Reports | TXT-based persistent reports |
+|---|---|
+| Language | Java 17+ |
+| Framework | Spring Boot, Spring Cloud |
+| API Gateway | Spring Cloud Gateway |
+| Service Discovery | Netflix Eureka |
+| Config Management | Spring Cloud Config |
+| Security | Spring Security + JWT |
+| Database | MySQL 8.0 |
+| Containerization | Docker, Docker Compose |
+| Build Tool | Maven |
 
 ---
 
-## 📂 Folder Structure
+## 📁 Project Structure
 
 ```
-src/
-├── com/auis/main/
-│   └── MainApp.java
-├── com/auis/controller/
-│   └── UserController.java
-├── com/auis/service/
-│   ├── IntelligenceService.java
-│   └── PredictiveAnalyticsEngine.java
-├── com/auis/dao/
-│   ├── UserDAO.java
-│   ├── ActivityDAO.java
-│   ├── RuleDAO.java
-│   ├── ActionSequenceDAO.java
-│   ├── AnomalyDAO.java
-│   ├── UserHabitDAO.java
-│   ├── UserSimilarityDAO.java
-│   └── UserSessionDAO.java
-├── com/auis/model/
-│   ├── User.java
-│   ├── UserActivity.java
-│   ├── Rule.java
-│   ├── ActionSequence.java
-│   ├── Anomaly.java
-│   ├── UserHabit.java
-│   ├── UserSimilarity.java
-│   └── UserSession.java
-├── com/auis/util/
-│   ├── DBConnection.java
-│   ├── SystemLogger.java
-│   ├── SessionManager.java
-│   ├── HealthMonitor.java
-│   ├── SystemReport.java
-│   ├── ExceptionHandler.java
-│   └── SecurityManager.java
-└── com/auis/worker/
-    └── BackgroundIntelligenceWorker.java
-
-scripts/
-├── setup_database.sql
-├── setup_database_v2.sql
-└── setup_database_v3.sql
-
-logs/
-├── system.log
-└── system_report_*.txt
+Revworkforce-Microservices-P3/
+├── api-gateway/               # API Gateway service
+├── config-server/             # Centralized config server
+├── service-discovery/         # Eureka server
+├── user-service/              # Authentication & user management
+├── employee-service/          # Employee, department, designation APIs
+├── leave-service/             # Leave management
+├── performance-service/       # Performance reviews & goals
+├── notification-service/      # Notification system
+├── reporting-service/         # HR reporting & dashboard
+├── revworkforce-ui            # Frontend UI
+├── docker-compose.yml         # Full stack Docker setup
+├── Dockerfile.template        # Shared Dockerfile for all services
+├── pom.xml                    # Root Maven POM
+├── .env.example               # Sample environment variables
+└── api_documentation.md       # Detailed API reference
 ```
 
 ---
 
-## ⚙️ Installation & Setup
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Java 8+
-- MySQL 5.7+
-- MySQL Connector/J
+- Java 17+
+- Maven 3.8+
+- Docker & Docker Compose
+- MySQL 8.0 (or use the Docker container)
 
----
-
-### Step 1: Database Setup
-
-```sql
-SOURCE scripts/setup_database.sql;
-SOURCE scripts/setup_database_v2.sql;
-SOURCE scripts/setup_database_v3.sql;
-```
-
----
-
-### Step 2: Configure Database
-
-Edit:
-
-```
-src/com/auis/util/DBConnection.java
-```
-
-```java
-private static final String DB_URL = "jdbc:mysql://localhost:3306/auis_db";
-private static final String DB_USER = "your_username";
-private static final String DB_PASSWORD = "your_password";
-```
-
----
-
-### Step 3: Compile
+### Run with Docker (Recommended)
 
 ```bash
-javac -cp .:mysql-connector-java-8.0.33.jar -d bin src/com/auis/**/*.java
+# 1. Clone the repository
+git clone https://github.com/Harshita188/Revworkforce-Microservices-P3.git
+cd Revworkforce-Microservices-P3
+
+# 2. Copy and configure the environment file
+cp .env.example .env
+# Edit .env and set your JWT_SECRET and other values
+
+# 3. Start all services
+docker-compose up --build
 ```
 
----
+Once running, the API Gateway will be available at: **http://localhost:8080**  
+Eureka Dashboard: **http://localhost:8761**
 
-### Step 4: Run
+### Run Locally (Manual)
 
 ```bash
-java -cp bin:mysql-connector-java-8.0.33.jar com.auis.main.MainApp
+# Start services in this order:
+# 1. MySQL
+# 2. service-discovery (Eureka)
+# 3. config-server
+# 4. api-gateway
+# 5. All other microservices
+
+cd service-discovery && mvn spring-boot:run
+cd config-server && mvn spring-boot:run
+cd api-gateway && mvn spring-boot:run
+cd user-service && mvn spring-boot:run
+# ... and so on for each service
 ```
 
 ---
 
-## 🧩 Features
+## 🔑 Environment Variables
 
-### 1️⃣ Persistent Reports
+Create a `.env` file at the project root (see `.env.example`):
 
-- Saves reports to disk
-- User activity reports
-- Security reports
-- Anomaly reports
-
----
-
-### 2️⃣ Centralized Exception Handling
-
-- No crashes
-- Friendly error messages
-- Stack trace logging
-
----
-
-### 3️⃣ Session Tracking
-
-- Login time
-- Logout time
-- Session duration
-- Action count
-
----
-
-### 4️⃣ Self-Learning Patterns
-
-- Action sequence tracking
-- Confidence score update
-- Smart predictions
-
----
-
-### 5️⃣ Anomaly Detection
-
-- Bot detection
-- Rapid action detection
-- Severity scoring
-
----
-
-### 6️⃣ Security System
-
-- Password hashing (SHA-256)
-- Brute-force prevention
-- Auto-lock system
-- Auto-unlock
-
----
-
-## 🔐 Security Features
-
-- SQL Injection prevention
-- Password hashing
-- Account locking
-- Bot detection
-- Audit logging
-
----
-
-## 📊 Logging & Reports
-
-All logs saved in:
-
-```
-logs/system.log
-logs/system_report_*.txt
+```env
+JWT_SECRET=your_super_secret_jwt_key_here
+DB_USERNAME=root
+DB_PASSWORD=root
 ```
 
----
-
-## 🚀 Production Readiness
-
-- Thread-safe
-- Fault tolerant
-- Scalable
-- Transaction-safe
-- Secure
+All services pick up configuration from the **Config Server** at startup.
 
 ---
 
-## 🧪 Testing Scenarios
-- **Security Test:** Enter wrong password 3 times to check **Account Lock** feature.
-- **Bot Detection:** Perform more than 10 actions within 10 seconds to trigger **Critical Anomaly**.
-- **Prediction Test:** Perform "Login" then "Search" multiple times; the system will start predicting "Search" as your next action.
-- **Report Test:** Check the `logs/` folder after running the app to see generated `.txt` reports.
+## 📡 API Overview
+
+All requests go through the **API Gateway** at `http://localhost:8080`.  
+A valid **JWT Bearer token** (obtained via login) is required for protected endpoints.
+
+### Authentication
+
+| Method | Endpoint | Description | Auth |
+|---|---|---|---|
+| POST | `/auth/login` | Login and receive JWT token | Public |
+| PUT | `/auth/change-password` | Change user password | Authenticated |
+
+### User Management
+
+| Method | Endpoint | Description | Role |
+|---|---|---|---|
+| POST | `/users` | Create new user | ADMIN |
+| GET | `/users` | List all users | ADMIN |
+| GET | `/users/{id}` | Get user by ID | Authenticated |
+
+### Employee Management
+
+| Method | Endpoint | Description | Role |
+|---|---|---|---|
+| POST | `/employees` | Create employee profile | ADMIN / HR |
+| GET | `/employees` | List all employees | Authenticated |
+| GET | `/employees/{id}` | Get employee by ID | Authenticated |
+| PUT | `/employees/{id}` | Update employee | ADMIN / HR |
+| DELETE | `/employees/{id}` | Delete employee | ADMIN |
+| GET | `/employees/count` | Total employee count | Authenticated |
+
+### Leave Management
+
+| Method | Endpoint | Description | Role |
+|---|---|---|---|
+| POST | `/api/leaves/apply` | Apply for leave | Authenticated |
+| POST | `/api/leaves/approve` | Approve/reject leave | ADMIN / MANAGER |
+| GET | `/api/leaves/history/{employeeId}` | Leave history | Authenticated |
+| GET | `/api/leaves/balances/{employeeId}` | Leave balances | Authenticated |
+| POST | `/api/leaves/initialize/{employeeId}` | Init leave balances | ADMIN |
+
+### Performance Management
+
+| Method | Endpoint | Description | Role |
+|---|---|---|---|
+| POST | `/api/performance/self-review` | Submit self-review | Authenticated |
+| POST | `/api/performance/manager-feedback/{reviewId}` | Manager feedback | MANAGER / ADMIN |
+| GET | `/api/performance/history/{employeeId}` | Review history | Authenticated |
+| POST | `/api/performance/goals` | Add goal | MANAGER / ADMIN |
+| GET | `/api/performance/goals/{employeeId}` | Get employee goals | Authenticated |
+
+### Notifications
+
+| Method | Endpoint | Description | Role |
+|---|---|---|---|
+| POST | `/api/notifications/send` | Send notification | Internal |
+| GET | `/api/notifications/{employeeId}` | Get notifications | Authenticated |
+
+### Reporting
+
+| Method | Endpoint | Description | Role |
+|---|---|---|---|
+| GET | `/api/reports/dashboard` | HR Dashboard data | ADMIN |
+
+> 📄 For full request/response schemas, see [api_documentation.md](./api_documentation.md)
 
 ---
 
-## 📌 Project Status
+## 🐳 Docker Setup
 
-✅ Completed  
-✅ Tested  
-✅ Production Ready  
-✅ Enterprise Grade  
+The `docker-compose.yml` orchestrates all services with proper startup ordering:
+
+```
+MySQL → Eureka (service-discovery) → Config Server → API Gateway → All Microservices
+```
+
+Services communicate internally using Docker's network. The API Gateway is the only publicly exposed service on port `8080`.
+
 ---
+
+## 👥 Team
+
+This is a group project built as part of the **Revature** training program.
+
+| Contributor | GitHub |
+|---|---|
+| Harshita | [@Harshita188](https://github.com/Harshita188) |
+| *(Add teammates here)* | — |
+
+---
+
+## 📄 License
+
+This project is for educational purposes as part of a training program.
+
+---
+
+> **RevWorkforce** — Empowering HR with modern microservices. 🚀
